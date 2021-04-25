@@ -1,0 +1,21 @@
+{
+  "name": "WAGMI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "DegenStewie <degenstewie@protonmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.0.0",
+    "bignumber.js": "^9.0.1",
+    "dotenv": "^8.2.0",
+    "truffle-privatekey-provider": "^1.5.0"
+  }
+}
