@@ -75,15 +75,15 @@ module.exports = {
     },
     bsc: {
       provider: () =>
-      new PrivateKeyProvider(
-        process.env.BSC_PRIVATE_KEY,
-        `https://bsc-dataseed1.binance.org`
-      ),
+        new PrivateKeyProvider(
+          process.env.BSC_PRIVATE_KEY,
+          `https://bsc-dataseed4.binance.org/`
+        ),
       network_id: 56,
       confirmations: 10,
       timeoutBlocks: 200,
       skipDryRun: true,
-      gasPrice: 20000000000 // 20 gwei
+      gasPrice: 20000000000, // 20 gwei
     },
     // Useful for private networks
     // private: {
@@ -111,5 +111,10 @@ module.exports = {
       //  evmVersion: "byzantium"
       // }
     },
+  },
+  plugins: ["truffle-plugin-verify"],
+  api_keys: {
+    etherscan: process.env.ETHERSCAN_API_KEY,
+    bscscan: process.env.BSCSCAN_API_KEY,
   },
 };
